@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["jlsuttles@gmail.com"]
   gem.description   = %q{Ruby Gem to Automate Using JQuery Picture Tag with Rails}
   gem.summary       = %q{Ruby Gem to Automate Using JQuery Picture Tag with Rails}
-  gem.homepage      = "https://g5.github.com/jquery_picture_tag-rails"
+  gem.homepage      = ""
 
   gem.required_rubygems_version = ">= 1.3.6"
 
