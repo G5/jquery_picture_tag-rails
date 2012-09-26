@@ -55,14 +55,13 @@ rails generate jquery_picture_tag:install
 Include the jquery-picture-tag into your application: 
 
 ```erb
-<%= javascript_include_tag :jquery-picture-tag %>
+<%= javascript_include_tag "jquery-picture-tag" %>
 ```
 
 
 ## Usage
 
-Use the [Picture Element Proposal](http://www.w3.org/community/respimg/)'s `<picture>` tag syntax.
-
+Use the [W3C Picture Element Proposal](http://www.w3.org/community/respimg/)'s `<picture>` tag syntax.
 ProTip™: Use [picture_tag-rails](https://github.com/G5/picture_tag-rails) to generate it for you.
 
 ```html
