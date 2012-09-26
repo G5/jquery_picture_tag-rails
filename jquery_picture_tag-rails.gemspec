@@ -10,12 +10,9 @@ Gem::Specification.new do |gem|
   gem.email         = ["jlsuttles@gmail.com"]
   gem.description   = %q{Ruby Gem to Automate Using JQuery Picture Tag with Rails}
   gem.summary       = %q{Ruby Gem to Automate Using JQuery Picture Tag with Rails}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/G5/jquery_picture_tag-rails"
 
-  gem.required_rubygems_version = ">= 1.3.6"
-
-  gem.add_dependency "railties", ">= 3.1.0"
-  gem.add_dependency "thor",     "~> 0.14"
+  gem.add_runtime_dependency "railties", ">= 3.0.0"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
