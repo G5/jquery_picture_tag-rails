@@ -43,12 +43,26 @@ The jquery-picture-tag file will be added to the asset pipeline and available fo
 
 ### Rails 3.0 (or greated with asset pipeline disabled)
 
+To copy the jquery-picture-tag file into `public/javascripts` run:
+
 ```bash
 rails generate jquery_picture_tag:install
 ```
 
 
 ## Usage
+
+Use the proposed HTML `<picture>` tag syntax.
+ProTip™: Use [picture_tag-rails](https://github.com/G5/picture_tag-rails).
+
+```html
+<picture>
+  <source media="(min-width: 980px)" srcset="images/large.jpg 1x">
+  <source media="(min-width: 768px)" srcset="images/medium.jpg 1x">
+  <source srcset="images/small.jpg 1x"> 
+  <img src="images/small.jpg" alt=""> 
+</picture>
+```
 
 Put this Javascript somewhere to apply it to all `<picture>` tags.
 
@@ -64,19 +78,6 @@ Or this to apply it to just some `<picture>` tags.
 $(function() {
   $('.gallery picture').pictureTag();
 });
-```
-
-Use the proposed HTML `<picture>` tag syntax.
-
-ProTip™: Use [picture_tag-rails](https://github.com/G5/picture_tag-rails).
-
-```html
-<picture>
-  <source media="(min-width: 980px)" srcset="images/large.jpg 1x">
-  <source media="(min-width: 768px)" srcset="images/medium.jpg 1x">
-  <source srcset="images/small.jpg 1x"> 
-  <img src="images/small.jpg" alt=""> 
-</picture>
 ```
 
 

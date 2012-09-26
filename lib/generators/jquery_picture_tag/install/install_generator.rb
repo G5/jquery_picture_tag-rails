@@ -10,7 +10,7 @@ if ::Rails.version < "3.1" || !::Rails.application.config.assets.enabled
 
         def copy_jquery_picture_tag
           say_status "copying", "jQuery Picture Tag #{JqueryPictureTag::Rails::VERSION}", :green
-          copy_file "jquery-picture-tag-#{JqueryPictureTag::Rails::VERSION}.js", "public/javascripts/jquery-picture-tag-#{VERSION}.js"
+          copy_file "jquery-picture-tag-#{JqueryPictureTag::Rails::VERSION}.js", "public/javascripts/jquery-picture-tag.js"
         end
 
       end
