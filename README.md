@@ -61,7 +61,8 @@ Include the jquery-picture-tag into your application:
 
 ## Usage
 
-Use the [W3C HTML Responsive Images Extension Proposal](http://www.w3.org/community/respimg/)'s `<picture>` tag syntax.
+Use the [Picture Element Proposal](http://www.w3.org/community/respimg/)'s `<picture>` tag syntax.
+
 ProTip™: Use [picture_tag-rails](https://github.com/G5/picture_tag-rails) to generate it for you.
 
 ```html
@@ -94,7 +95,7 @@ $(function() {
 
 ## Authors
 
-  * Jessica Lynn Suttles / @jlsuttles
+  * Jessica Lynn Suttles / [@jlsuttles](https://github.com/jlsuttles)
 
 
 ## Contributing
