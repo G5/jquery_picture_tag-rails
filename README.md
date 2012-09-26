@@ -14,7 +14,7 @@ Works great with [Picture Tag Rails](https://github.com/G5/picture_tag-rails)!
 * [jQuery](http://jquery.com)
 * [matchMedia.js](https://github.com/paulirish/matchMedia.js) for older browsers
 * [rubygems](http://rubygems.org) >= 1.3.6
-* [railties](http://rubygems.org/gems/railties) >= 3.1.0, < 5.0
+* [railties](http://rubygems.org/gems/railties) >= 3.1.0
 * [thor](http://rubygems.org/gems/thor) ~> 0.14
 
 
