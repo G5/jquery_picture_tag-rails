@@ -68,12 +68,12 @@ ProTip™: Use [picture_tag-rails](https://github.com/G5/picture_tag-rails) to g
 
 ```html
 <picture alt="Kitty cat!">
-  <source media="(min-width: 1600px)" srcset="cat-large.jpg 1x, cat-large@2x.jpg 2x" />
-  <source media="(min-width: 1000px)" srcset="cat-medium.jpg 1x, cat-medium@2x.jpg 2x" />
-  <source media="(min-width: 768px)"  srcset="cat-small.jpg 1x, cat-small@2x.jpg 2x" />
-  <source media="(min-width: 480px)"  srcset="cat-tiny.jpg 1x, cat-tiny@2x.jpg 2x" />
-  <source srcset="cat-tiny.jpg 1x, cat-tiny@2x.jpg 2x" />
-  <img alt="Kitty cat!" src="cat-tiny.jpg" />
+  <source media="(min-width: 1600px)" srcset="cat-large.jpg 1x, cat-large@2x.jpg 2x">
+  <source media="(min-width: 1000px)" srcset="cat-medium.jpg 1x, cat-medium@2x.jpg 2x">
+  <source media="(min-width: 768px)"  srcset="cat-small.jpg 1x, cat-small@2x.jpg 2x">
+  <source media="(min-width: 480px)"  srcset="cat-tiny.jpg 1x, cat-tiny@2x.jpg 2x">
+  <source srcset="cat-tiny.jpg 1x, cat-tiny@2x.jpg 2x">
+  <img alt="Kitty cat!" src="cat-tiny.jpg">
 </picture>
 ```
 
@@ -102,7 +102,7 @@ $(function() {
 ## Contributing
 
 1. Fork it
-2. Get it running (see Installation above)
+2. Get it running
 3. Create your feature branch (`git checkout -b my-new-feature`)
 4. Write your code and **specs**
 5. Commit your changes (`git commit -am 'Add some feature'`)
