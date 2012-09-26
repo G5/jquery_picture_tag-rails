@@ -1,6 +1,7 @@
 # jQuery Picture Tag for Rails
 
 Ruby Gem to include the [jQuery Picture Tag](https://github.com/G5/jquery-picture-tag) source code in your Rails application.
+Works great with [Picture Tag Rails](https://github.com/G5/picture_tag-rails)!
 
 
 ## Current Version
@@ -35,7 +36,9 @@ gem install jquery_picture_tag-rails
 
 ### Rails 3.1 or greater (with asset pipeline enabled)
 
-The jquery-picture-tag file will be added to the asset pipeline and available for you to use. Add this line in `app/assets/javascripts/application.js`:
+The jquery-picture-tag file will be added to the asset pipeline and available for you to use. 
+
+Add this line in `app/assets/javascripts/application.js`:
 
 ```javascript
 //= require jquery-picture-tag
@@ -43,24 +46,32 @@ The jquery-picture-tag file will be added to the asset pipeline and available fo
 
 ### Rails 3.0 (or greated with asset pipeline disabled)
 
-To copy the jquery-picture-tag file into `public/javascripts` run:
+Copy the jquery-picture-tag file into `public/javascripts`:
 
 ```bash
 rails generate jquery_picture_tag:install
 ```
 
+Include the jquery-picture-tag into your application: 
+
+```erb
+<%= javascript_include_tag :jquery-picture-tag %>
+```
+
 
 ## Usage
 
-Use the proposed HTML `<picture>` tag syntax.
-ProTip™: Use [picture_tag-rails](https://github.com/G5/picture_tag-rails).
+Use the [W3C HTML Responsive Images Extension Proposal](http://www.w3.org/community/respimg/)'s `<picture>` tag syntax.
+ProTip™: Use [picture_tag-rails](https://github.com/G5/picture_tag-rails) to generate it for you.
 
 ```html
-<picture>
-  <source media="(min-width: 980px)" srcset="images/large.jpg 1x">
-  <source media="(min-width: 768px)" srcset="images/medium.jpg 1x">
-  <source srcset="images/small.jpg 1x"> 
-  <img src="images/small.jpg" alt=""> 
+<picture alt="Kitty cat!">
+  <source media="(min-width: 1600px)" srcset="cat-large.jpg 1x, cat-large@2x.jpg 2x" />
+  <source media="(min-width: 1000px)" srcset="cat-medium.jpg 1x, cat-medium@2x.jpg 2x" />
+  <source media="(min-width: 768px)"  srcset="cat-small.jpg 1x, cat-small@2x.jpg 2x" />
+  <source media="(min-width: 480px)"  srcset="cat-tiny.jpg 1x, cat-tiny@2x.jpg 2x" />
+  <source srcset="cat-tiny.jpg 1x, cat-tiny@2x.jpg 2x" />
+  <img alt="Kitty cat!" src="cat-tiny.jpg" />
 </picture>
 ```
 
