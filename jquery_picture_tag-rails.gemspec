@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = JqueryPictureTag::Rails::VERSION
   gem.authors       = ["Jessica Lynn Suttles"]
   gem.email         = ["jlsuttles@gmail.com"]
-  gem.description   = %q{Ruby Gem to Automate Using JQuery Picture Tag with Rails}
-  gem.summary       = %q{Ruby Gem to Automate Using JQuery Picture Tag with Rails}
+  gem.description   = %q{jQuery picture tag for Rails}
+  gem.summary       = %q{jQuery picture tag for Rails}
   gem.homepage      = "https://github.com/G5/jquery_picture_tag-rails"
 
   gem.add_runtime_dependency "railties", ">= 3.0.0"
