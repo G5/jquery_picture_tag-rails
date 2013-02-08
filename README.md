@@ -1,5 +1,7 @@
 # jQuery Picture Tag for Rails
 
+[![Code Climate](https://codeclimate.com/github/G5/jquery_picture_tag-rails.png)](https://codeclimate.com/github/G5/jquery_picture_tag-rails)
+
 Ruby Gem to include the [jQuery Picture Tag](https://github.com/G5/jquery-picture-tag) source code in your Rails application.
 Works great with [Picture Tag Rails](https://github.com/G5/picture_tag-rails)!
 
